@@ -14,7 +14,13 @@ export const Image = styled.img`
     cursor: ${props => props.c || "default"};
     margin-left: ${props => props.left || "0px"};
     margin-right: ${props => props.right || "0px"};
-    border-radius: ${props => props.elipce || "0px"}
+    border-radius: ${props => props.elipce || "0px"};
+
+    @media screen and (max-width: 292px){
+        display: ${props => props.dp};
+    }
+
+
 `;
 export const Icon = styled.i`
     margin-left: ${props => props.left || "0px" };
@@ -78,6 +84,9 @@ export const Contenedor = styled.div`
         margin-left: ${props => props.left2};
         display: ${props => props.display2 || "flex"};
     }
+
+    
+    
 `;
 
 export const Link = styled.a`
