@@ -1,7 +1,7 @@
 import { Icon, Textbox, Button, Contenedor} from "./index";
 import { useRef, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faVideo, faTimes, faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { faSearch,  faTimes,  } from '@fortawesome/free-solid-svg-icons';
 
 export default function BuscadorComponents (){
     const Search = <FontAwesomeIcon icon={faSearch}/>

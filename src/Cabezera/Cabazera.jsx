@@ -8,14 +8,14 @@ import BuscadorComponents from "./BuscadorComponents"
 import NavegatioComponents from "./NavegatioComponents"
 import NavegationMovileComponents from "./NavegationMovileComponents"
 
-export default function Cabezera (){
+export default function Cabezera (props){
 
     const [ mostrarM, getMostarM ] = useState(true)
 
     return (
         <HeaderNav>
             <Contenedor display2="flex"  sizeW="100%" sizeH="100%" df="flex" justify="space-between">
-                <LogoComponents/>
+                <LogoComponents barraActive={props.abrirLateral} />
                 
                 <BuscadorComponents/>
 
