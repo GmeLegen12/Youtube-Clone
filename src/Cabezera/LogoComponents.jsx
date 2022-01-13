@@ -8,7 +8,10 @@ export default function LogoComponents(){
     return(
         <Contenedor df="flex">
                 <Button left2="7px" left="20px" background="none" ><Icon size="22px" >{Bars}</Icon></Button>
-                <Image c="pointer" size="93px" left="21px" src={logo}/>
+                <a href="/">
+                    <Image c="pointer" size="93px" left="21px" src={logo}/>
+                </a>
+                
         </Contenedor>
     
     )
